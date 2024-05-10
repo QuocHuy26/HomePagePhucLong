@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phúc Long Coffee & Tea</title>
+    <style>
+        .menu {
+            text-align: center;
+            position: relative;
+            list-style-type: none;
+            font-weight: bold;
+            font-size: 15px;
+            display: block;
+            margin: 7px 0 7px 0;
+        }
+        .menu li {
+            display: inline;
+            color: #666666;
+            padding: 10px 15px;
+            margin: 0 10px 0 10px;
+            position: relative;
+            cursor: pointer;
+        }
+        .menu li:hover {
+            color: #0C713D;
+        }
+        .title {
+            line-height: normal;
+            margin: 0 0 50px;
+            color: #0C713D;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .span1 {
+            color: #0C713D;
+            border: 1px solid #0C713D;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .span1:hover{
+            color: white;
+            background-color: #0C713D;
+        }
+        .span2 {
+            width: 190px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 7px 10px;
+            margin: 0 1px;
+            cursor: pointer;
+        }
+        .span2:hover{
+            border: 1px solid red;
+        }
+        .span3 {
+            color: white;
+            font-size: 13px;
+            width: 23%;
+            height: fit-content;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 4px;
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+        .span3:hover{
+            border: 1px solid red;
+        }
+        .store-list{
+            max-height: 300px;
+            overflow-y: auto;
+            list-style-type: none;
+            margin: 20px 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        .store-list li{
+            background-image: url(https://phuclong.com.vn/images/icons/icon_store.svg);
+            background-repeat: no-repeat;
+            background-position: left 20px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+            cursor: pointer;
+        }
+        .store-list li p{
+            margin: 0;
+            padding: 10px 10px 10px 35px;
+            width: 60%;
+        }
+    </style>
+</head>
+<body style="font-family: 'Muli', sans-serif; font-size: 14px; line-height: 1.4; color: #171717;">
+    <div id="header"
+        style="
+            width: 100%;
+            position: relative;
+        "
+    >
+        <div style="display: flex; border-bottom: 3px solid #F5F5F5;">
+            <div id="container"
+                style="
+                    position: relative;
+                    width: 1170px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin-right: auto;
+                    margin-left: auto;"
+                >
+                <div id="delivered" style= "width: 20%;
+                                            float: left;
+                                            padding-top: 10px;"
+                >
+                    <img src="https://phuclong.com.vn/images/common/delivery.png" style="cursor: pointer;"/>
+                </div>
+                <div id="logo" style="  width: 50%;
+                                        float: left;
+                                        position: relative;
+                                        display: block;
+                                        height: 50px;"
+                >
+                    <img src="https://phuclong.com.vn/images/logo.png" style="  width: 70px;
+                                                                                position: absolute !important;
+                                                                                left: 50%;
+                                                                                transform: translateX(-50%);
+                                                                                padding: 1px 5px;
+                                                                                vertical-align: middle;
+                                                                                cursor: pointer;"
+                    />
+                </div>
+                <div id= "right" style="width: 30%;
+                                        float: right;
+                                        padding-top: 10px;"
+                >
+                    <div id="cart" style="float: right; width: 27%; margin-right: 10px; position: relative;">
+                        <img src="cart.jpg" style="width: 105%; height: auto;"/>
+                    </div>
+                    <div id="lang-wrap" style="float: right; margin-top: 7px; margin-right: 10px; display: flex;">
+                        <div style="color: #00713d; font-weight: bold; cursor: pointer;">
+                            VN
+                        </div>
+                        <div style="margin: 0 3px 0 3px;">|</div>
+                        <div style="cursor: pointer;">EN</div>
+                    </div>
+                    <div id="log-in" style="float: right; margin: 7px 10px 0 0;">
+                        <a href="https://order.phuclong.com.vn/" style="color:black; text-decoration: none;"><b>Đăng nhập</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-box" style="padding-bottom: 2px; margin-bottom: 2px; box-shadow: 0 2px 3px #ccc;">
+            <ul class="menu">
+                <li style="color: #0C713D;">TRANG CHỦ</li>
+                <li>CÀ PHÊ</li>
+                <li>TRÀ</li>
+                <li>THỨC UỐNG</li>
+                <li>SẢN PHẨM</li>
+                <li>KHUYẾN MÃI</li>
+                <li>VỀ CHÚNG TÔI</li>
+                <li>THẺ</li>
+                <li>
+                    <img src="https://phuclong.com.vn/images/common/search_icon.svg" style="width: 20px;"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="banner" style="position: relative; width: 100%; float: left;">
+        <img src="https://phuclong.com.vn/uploads/banner/a703e1153c5dd9-z5417895221915_378190bb622bae988c1e279477c1676d.jpg"
+            style="width: 100%; height: auto;"
+        />
+    </div>
+    <div id="content"
+        style= "position: relative;
+                float: left;
+                width: 100%;
+                margin-top: 100px;
+                background-image: url(https://phuclong.com.vn/uploads/banner/6313d6d02ac48e-2949308c6b040fcoffeecopy.png);
+                background-repeat: no-repeat;
+                background-position: right bottom;
+            "
+    >
+        <div style="width: 100%; height: 550px;">
+            <div id="img" style="position: relative; float: left; width: 47%; max-height: 525px; padding: 25px 0 0 0;">
+                <img src="https://phuclong.com.vn/uploads/post/20649d183ca5f1-bannertrangchu.jpg" style="float:right; width: 90%; max-width: 525px;"/>
+            </div>
+            <div id="text" style="position: relative; float: left; display: grid; width: 45%; height: 100%; padding-left: 8%; align-content: center;">
+                <h3 class="title" style="width: 70%; padding: 25px 0 0 40px;">TỪ NHỮNG MẦM TRÀ, CHÚNG TÔI TẠO RA NIỀM ĐAM MÊ</h3>
+                <div style="width: 70%; padding-left: 40px;">
+                    <p style="margin-bottom: 30px;">
+                        Trải qua hơn 50 năm chắt chiu tinh hoa từ những búp trà xanh và hạt cà phê thượng hạng cùng mong muốn mang lại cho khách 
+                        hàng những trải nghiệm giá trị nhất khi thưởng thức, Phúc Long liên tục là thương hiệu tiên phong với nhiều ý tưởng sáng 
+                        tạo đi đầu trong ngành trà và cà phê.
+                        <br>
+                        <br>
+                        Chúng tôi tin rằng từng sản phẩm trà và cà phê sẽ càng thêm hảo hạng khi được tạo ra từ sự phấn đấu không ngừng cùng niềm 
+                        đam mê. Và chính kết nối dựa trên niềm tin, sự trung thực và tin yêu sẽ góp phần mang đến những nét đẹp trong văn hóa 
+                        thưởng trà và cà phê ngày càng bay cao, vươn xa.
+                    </p>
+                    <span class="span1">
+                        XEM THÊM
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; height: 550px;margin-top: 130px;">
+            <div id="text" style="position: relative; float: left; display: grid; width: 47%; height: 550px; margin: 0 15px; align-content: center;">
+                <h3 class="title" style="width: 70%; max-width: 525px; padding: 25px 0 0 180px;">ĐỘI NGŨ NHÂN VIÊN TRÀN ĐẦY NHIỆT HUYẾT</h3>
+                <div style="width: 70%; max-width: 525px; padding-left: 180px;">
+                    <p style="margin-bottom: 30px;">
+                        Trong suốt quá trình hoạt động và phát triển, đội ngũ quản lý và nhân viên của Phúc Long Coffee & Tea, qua bao thế hệ, 
+                        đã cùng nhau xây dựng, nuôi dưỡng niềm đam mê dành cho trà và cà phê với mong muốn được thử thách bản thân trong ngành 
+                        dịch vụ năng động và sáng tạo.
+                    </p>
+                    <span class="span1">
+                        GIA NHẬP ĐỘI NGŨ PHÚC LONG
+                    </span>
+                </div>
+            </div>
+            <div id="img" style="position: relative; float: left; width: 45%; max-height: 525px; padding: 25px 15px 0 15px;">
+                <img src="https://phuclong.com.vn/uploads/post/024b7d5e73bbb2-8ed98f521583690431954887e772tuyendung1.jpg" style="max-width: 320px;"/>
+            </div>
+        </div>
+    </div>
+    <div id="home-section" style="float: left; width: 100%; background-color: #0C713D; color: white;">
+        <div id="map-info" style="float:left; width: 45%; padding: 70px 0 0 70px;">
+            <h2 style="font-weight: 500; font-size: 28px;">HỆ THỐNG CỬA HÀNG</h2>
+            <div id="map-choose" style="font-size: 12px; margin: 30px 0; display: flex;">
+                <span class="span2">
+                    <b>TỈNH/THÀNH PHỐ</b>
+                </span>
+                <span class="span2">
+                    <b>QUẬN</b>
+                </span>
+            </div>
+            <h4 style="font-size: 18px; font-weight: 500; margin: 10px 0;">Địa chỉ cửa hàng</h4>
+            <ul class="store-list">
+                <li>
+                    <p>
+                        Phúc Long Lê Văn Sỹ - 350 Lê Văn Sỹ, quận 3, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20408)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long 188 Trần Hưng Đạo - 188 Trần Hưng Đạo, quận 5, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20668)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long Lê Văn Sỹ - 350 Lê Văn Sỹ, quận 3, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20408)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long 188 Trần Hưng Đạo - 188 Trần Hưng Đạo, quận 5, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20668)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long Lê Văn Sỹ - 350 Lê Văn Sỹ, quận 3, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20408)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long 188 Trần Hưng Đạo - 188 Trần Hưng Đạo, quận 5, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20668)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long Lê Văn Sỹ - 350 Lê Văn Sỹ, quận 3, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20408)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long 188 Trần Hưng Đạo - 188 Trần Hưng Đạo, quận 5, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20668)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long Lê Văn Sỹ - 350 Lê Văn Sỹ, quận 3, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20408)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long 188 Trần Hưng Đạo - 188 Trần Hưng Đạo, quận 5, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20668)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long Lê Văn Sỹ - 350 Lê Văn Sỹ, quận 3, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20408)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long 188 Trần Hưng Đạo - 188 Trần Hưng Đạo, quận 5, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20668)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+                <li>
+                    <p>
+                        Phúc Long Lê Văn Sỹ - 350 Lê Văn Sỹ, quận 3, Hồ Chí Minh
+                        <br>
+                        Điện thoại: (028) 7100 1968 (Ext. 20408)
+                    </p>
+                    <span class="span3">Chỉ đường</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="footer" style="float: left; width: 100%; padding: 30px 10%;">
+        <div id="address" style="float: left; width: 40%;">
+            <div style="float:left; display: block; margin-right: 40px;">
+                <b>Trụ sở chính:</b> Công ty Cổ Phần Phúc Long Heritage - ĐKKD: 0316 871719<br>
+                do sở KHĐT TPHCM cấp lần đầu ngày 21/05/2021<br>
+                <b>Nhà máy:</b> D_8D_CN Đường XE 1, Khu Công Nghiệp Mỹ Phước III, phường Mỹ Phước, thị xã Bến Cát, tỉnh Bình Dương, Việt Nam<br>
+                <b>Địa chỉ:</b> Phòng 702, Tầng 7, Tòa nhà Central Plaza, số 17 Lê Duẩn, phường Bến Nghé, quận 1, Hồ Chí Minh<br>
+                <b>Điện thoại:</b> 1900 234 518 (Ext.9100/ 9102)<br>
+                <b>Fax:</b> (028) 6263 0379<br>
+                <b style="float: left"> Email:&nbsp;</b>
+                <div style="float: left;">
+                    sales@phuclong.masangroup.com<br>
+                    info2@phuclong.masangroup.com
+                </div>
+            </div>
+        </div>
+        <div id="sign-up" style="float:left; width: 20%;">
+            <b style="float:left">Đăng ký nhận tin khuyến mãi</b>
+            <div style="float: left; width: 100%; margin: 10px 0 20px;">
+                <input 
+                    placeholder="Nhập địa chỉ email" 
+                    style="border: 1px solid #0C713D; border-radius: 4px;font-size: 14px; padding: 10px;"
+                >
+                <span class="span1">GỬI</span>
+            </div>
+            <p>
+                <span style="cursor: pointer;">Chính sách đặt hàng<br></span>
+                <span style="cursor: pointer;">Chính sách bảo mật thông tin</span>
+            </p>
+        </div>
+        <div id="social" style="float: left; width: 20%;">
+            <div id="lang-wrap" style="width: 100%; margin-top: 7px; display: flex;justify-content: flex-end;">
+                <div style="color: #00713d; font-weight: bold; cursor: pointer;">
+                    VN
+                </div>
+                <div style="margin: 0 3px;">|</div>
+                <div style="cursor: pointer;">EN</div>
+            </div>
+            <div style="float: right; width: 70%; margin: 5px 0;">
+                <img src="https://phuclong.com.vn/images/common/dathongbao.png" style="float: right; width: 90%; cursor: pointer;"/>
+            </div>
+            <div style="float: right; width: 70%;">
+                <img src="social-icon.png" style="float: right; width: 65%; cursor: pointer;"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
