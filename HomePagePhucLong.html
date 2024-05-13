@@ -92,9 +92,48 @@
             padding: 10px 10px 10px 35px;
             width: 60%;
         }
+        .sub_menu{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            padding: 0px 20px;
+            box-shadow: 1px 2px 3px #ccc;
+            z-index: 99;
+        }
+        .sub_menu ul {
+            padding: 0;
+            margin: 10px 0;
+            display: grid;
+            justify-items: start;
+        }
+        .sub_menu_item {
+            color: black !important;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .sub_menu_item:hover {
+            background-color: #0C713D;
+            color: white !important;
+        }
+        .sub_menu_item_sp {
+            width: 140px;
+            margin: 0 !important;
+            padding: 7px !important;
+            color: black !important;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: left;
+        }
+        .sub_menu_item_sp:hover {
+            background-color: #0C713D;
+            color: white !important;
+        }
     </style>
 </head>
-<body style="font-family: 'Muli', sans-serif; font-size: 14px; line-height: 1.4; color: #171717;">
+<body style="width:100%; font-family: 'Muli', sans-serif; font-size: 14px; line-height: 1.4; color: #171717;">
     <div id="header"
         style="
             width: 100%;
@@ -155,15 +194,183 @@
         <div id="menu-box" style="padding-bottom: 2px; margin-bottom: 2px; box-shadow: 0 2px 3px #ccc;">
             <ul class="menu">
                 <li style="color: #0C713D;">TRANG CHỦ</li>
-                <li>CÀ PHÊ</li>
-                <li>TRÀ</li>
-                <li>THỨC UỐNG</li>
-                <li>SẢN PHẨM</li>
-                <li>KHUYẾN MÃI</li>
-                <li>VỀ CHÚNG TÔI</li>
-                <li>THẺ</li>
-                <li>
+                <li class="menu-item">
+                    CÀ PHÊ
+                    <div class="sub_menu" style="width: 210px;">
+                        <ul>
+                            <li class="sub_menu_item" style="width: 160px;">Hành trình tách cà phê đậm vị</li>
+                            <li class="sub_menu_item" style="width: 160px;">Hạt cà phê Phúc Long</li>
+                            <li class="sub_menu_item" style="width: 160px;">Nghệ thuật pha chế</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    TRÀ
+                    <div class="sub_menu" style="width: 210px;">
+                        <ul>
+                            <li class="sub_menu_item" style="width: 160px;">Hành trình tách trà đậm vị</li>
+                            <li class="sub_menu_item" style="width: 160px;">Là trà Phúc Long</li>
+                            <li class="sub_menu_item" style="width: 160px;">Cold Brew Tea - Trà ủ lạnh - Phong cách trà mới</li>
+                            <li class="sub_menu_item" style="width: 160px;">Nghệ thuật pha chế</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    THỨC UỐNG
+                    <div class="sub_menu" style="width: 210px;">
+                        <ul>
+                            <li class="sub_menu_item" style="width: 160px;">Thức uống</li>
+                            <li class="sub_menu_item" style="width: 160px;">Bánh tráng miệng</li>
+                            <li class="sub_menu_item" style="width: 160px;">Đồ ăn vặt</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    SẢN PHẨM
+                    <div class="sub_menu" style="width: 1140px; padding: 15px; left: auto;">
+                        <ul style="display: flex;">
+                            <li style="display: inline;">
+                                <p style="text-align: left; font-size: 20px; color:#0C713D; margin: 0 0 20px 5px;"><b>TRÀ</b></p>
+                                <ul style="display: flex;">
+                                    <li style="margin: 0; padding: 0;">
+                                        <ul>
+                                            <li class="sub_menu_item" style="width: 150px; margin: 0 0 15px; padding: 5px;">
+                                                <p style="text-align: left; font-size: 14px; margin: 0;"><b>TRÀ HỘP</b></p>
+                                            </li>
+                                            <li class="sub_menu_item_sp">Trà túi lọc</li>
+                                            <li class="sub_menu_item_sp">Trà túi tam giác</li>
+                                            <li class="sub_menu_item_sp">Trà hộp giấy</li>
+                                            <li class="sub_menu_item_sp">Lễ hộp</li>
+                                            <li class="sub_menu_item_sp">Trà hộp xám</li>
+                                        </ul>
+                                    </li>
+                                    <li style="margin: 0; padding: 0;">
+                                        <ul>
+                                            <li class="sub_menu_item" style="width: 150px; margin: 0 0 15px; padding: 5px;">
+                                                <p style="text-align: left; font-size: 14px; margin: 0;"><b>TRÀ GÓI</b></p>
+                                            </li>
+                                            <li class="sub_menu_item_sp">Trà Thái Nguyên</li>
+                                            <li class="sub_menu_item_sp">Trà gói cao cấp</li>
+                                            <li class="sub_menu_item_sp">Trà vạn lý hương</li>
+                                            <li class="sub_menu_item_sp">Trà đen</li>
+                                            <li class="sub_menu_item_sp">Trà sen</li>
+                                            <li class="sub_menu_item_sp">Trà xanh</li>
+                                            <li class="sub_menu_item_sp">Trà lài</li>
+                                        </ul>
+                                    </li>
+                                    <li style="margin: 0; padding: 0;">
+                                        <ul>
+                                            <li class="sub_menu_item" style="width: 150px; margin: 0 0 15px; padding: 5px;">
+                                                <p style="text-align: left; font-size: 14px; margin: 0;"><b>TRÀ LON</b></p>
+                                            </li>
+                                            <li class="sub_menu_item_sp">Trà lon giấy</li>
+                                            <li class="sub_menu_item_sp">Trà lon giấy cao cấp</li>
+                                            <li class="sub_menu_item_sp">Trà lon thiếc</li>
+                                            <li class="sub_menu_item_sp">Trà Ô Long thượng hạng</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li style="display: inline;">
+                                <p style="text-align: left; font-size: 20px; color:#0C713D; margin: 0 0 20px 5px;"><b>CÀ PHÊ</b></p>
+                                <ul>
+                                    <li class="sub_menu_item_sp">Cà phê Set</li>
+                                    <li class="sub_menu_item_sp">Cà phê phin nhôm</li>
+                                    <li class="sub_menu_item_sp">Cà phê mùi</li>
+                                    <li class="sub_menu_item_sp">Cà phê hạt</li>
+                                </ul>
+                            </li>
+                            <li style="display: inline;">
+                                <p style="text-align: left; font-size: 20px; color:#0C713D; margin: 0 0 20px 5px;"><b>BÁNH TRUNG THU</b></p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    KHUYẾN MÃI
+                    <div class="sub_menu">
+                    </div>
+                </li>
+                <li class="menu-item">
+                    VỀ CHÚNG TÔI
+                    <div class="sub_menu" style="width: 684px; padding: 15px; left: -250%;">
+                        <ul style="display: flex; justify-content: space-between;">
+                            <li style="margin: 0; padding: 0;">
+                                <ul>
+                                    <li class="sub_menu_item_sp" style="font-size: 14px;"><b>CÔNG TY</b></li>
+                                    <li class="sub_menu_item_sp">Tầm nhìn</li>
+                                    <li class="sub_menu_item_sp">Sứ mệnh</li>
+                                    <li class="sub_menu_item_sp">Giá trị cốt lõi</li>
+                                    <li class="sub_menu_item_sp">Lĩnh vực hoạt động</li>
+                                </ul>
+                            </li>
+                            <li style="margin: 0; padding: 0;">
+                                <ul>
+                                    <li class="sub_menu_item_sp" style="font-size: 14px;"><b>TUYỂN DỤNG</b></li>
+                                    <li class="sub_menu_item_sp">HTCH</li>
+                                    <li class="sub_menu_item_sp">Kiosk</li>
+                                    <li class="sub_menu_item_sp">Văn phòng</li>
+                                    <li class="sub_menu_item_sp">Nhà máy</li>
+                                </ul>
+                            </li>
+                            <li style="margin: 0; padding: 0;">
+                                <ul>
+                                    <li class="sub_menu_item_sp" style="font-size: 14px;"><b>THƯ VIỆN</b></li>
+                                    <li class="sub_menu_item_sp">Hình ảnh</li>
+                                    <li class="sub_menu_item_sp">Video</li>
+                                    <li class="sub_menu_item_sp">Hồ sơ công bố</li>
+                                    <li class="sub_menu_item_sp">Công văn</li>
+                                </ul>
+                            </li>
+                            <li style="margin: 0; padding: 0;">
+                                <ul>
+                                    <li class="sub_menu_item_sp" style="font-size: 14px;"><b>LIÊN HỆ</b></li>
+                                    <li class="sub_menu_item_sp">Hệ thống cửa hàng Phúc Long COFFEE & TEA</li>
+                                    <li class="sub_menu_item_sp">Hệ thống cửa hàng Phúc Long Kiosk</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>  
+                </li>
+                <li class="menu-item">
+                    THẺ
+                    <div class="sub_menu" style="width: 760px; padding: 15px; left: auto; right: -220%;">
+                        <ul style="display: flex; justify-content: space-around;">
+                            <li style="margin: 0; padding: 0;">
+                                <ul>
+                                    <li class="sub_menu_item_sp" style="width: 310px;">Thông tin chương trình Thẻ Thành Viên</li>
+                                </ul>
+                            </li>
+                            <li style="margin: 0; padding: 0;">
+                                <ul>
+                                    <li class="sub_menu_item_sp" style="width: 310px;">Điều khoản & Điều kiện</li>
+                                    <li class="sub_menu_item_sp" style="width: 310px;">Điều khoản & Điều kiện Thẻ Cashless</li>
+                                    <li class="sub_menu_item_sp" style="width: 310px;">Những câu hỏi thường gặp (F.A.Q)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="menu-item">
                     <img src="https://phuclong.com.vn/images/common/search_icon.svg" style="width: 20px;"/>
+                    <div class="sub_menu" style="padding: 0; border-radius: 10px; left: auto; right: 0;">
+                        <ul style="margin: 0;">
+                            <li class="sub_menu_item"
+                                style= "width: 120px; font-size: 14px; margin: 0;
+                                        border-top-right-radius: 10px; border-top-left-radius: 10px;
+                                        border-bottom: 1px solid #ccc;"
+                            >
+                                Sản phẩm cà phê
+                            </li>
+                            <li class="sub_menu_item"
+                                style= "width: 120px; font-size: 14px; margin: 0;
+                                        border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;
+                                        border-bottom: 1px solid #ccc;"
+                            >
+                                Sản phẩm trà
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -391,5 +598,18 @@
             </div>
         </div>
     </div>
+    <script>
+        const items=document.getElementsByClassName("menu-item");
+        const sub_menu=document.getElementsByClassName("sub_menu");
+        for (let i = 0; i<items.length; i++){
+            items[i].addEventListener("mouseover", () =>{
+                sub_menu[i].style.display = 'block';
+            });
+            items[i].addEventListener("mouseleave", () =>{
+                sub_menu[i].style.display = 'none';
+            });
+        }
+        console.log(items);
+    </script>
 </body>
 </html>
